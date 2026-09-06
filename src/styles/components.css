@@ -1074,25 +1074,27 @@ REDUCED MOTION
     align-items: start;
   }
   .portrait-card {
-    border: 1px solid var(--line);
-    border-radius: 34px;
-    padding: 1rem;
-    background: rgba(255, 253, 249, 0.68);
+    border: none;
+    padding: 0;
+    background: transparent;
   }
+
   .portrait-shape {
-    min-height: 620px;
-    border-radius: 26px;
-    display: grid;
-    place-items: center;
-    background: radial-gradient(
-      circle at 35% 30%,
-      #fff4f8 0,
-      #ffd6e8 20%,
-      #ff8fbd 42%,
-      #a52f67 70%,
-      #331126 100%
-    );
-    box-shadow: inset -40px -50px 90px rgba(23, 19, 26, 0.18);
+    display: inline-block;
+    min-height: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .portrait-shape img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+    border: 1px solid var(--line);
+    border-radius: 12px;
   }
   .portrait-shape span {
     padding: 0.65rem 0.8rem;

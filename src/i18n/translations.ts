@@ -278,7 +278,7 @@ const sv: Dict = {
     text: "Jag gillar att röra mig mellan det kreativa och det tekniska, och att göra idéer begripliga, användbara och levande.",
     portraitPlaceholder: "DIN BILD / PORTRÄTT",
     portraitCaption: "",
-    bigCopy: "Namn Efternamn",
+    bigCopy: "Molly Lidgren",
     bigCopySections: [
       {
         title: "Vem jag är",
