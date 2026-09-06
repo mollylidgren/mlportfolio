@@ -1,5 +1,8 @@
 import type { Project } from "./types";
 
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 // Every text field is { sv, en } — when you add a new project, just fill
 // in both languages here and it will show up correctly everywhere
 // (project cards, hero, the case page) no matter which language is active.
@@ -35,9 +38,9 @@ export const projects: Project[] = [
 
     tags: ["React", "Figma", "UX", "Information Architecture"],
 
-    image: "/images/projectA/Awebsite.png",
+    image: asset("/images/projectA/Awebsite.png"),
 
-    caseImage: "/images/projectA/Aadator.png",
+    caseImage: asset("/images/projectA/Aadator.png"),
 
     role: {
       sv: "Frontend · UX · Visuell design",
@@ -66,28 +69,28 @@ export const projects: Project[] = [
 
     gallery: [
       {
-        src: "/images/projectA/Ahome.png",
+        src: asset("/images/projectA/Ahome.png"),
         caption: {
           sv: "Startsida med sökfunktion och destinationer",
           en: "Homepage featuring search function and destinations",
         },
       },
       {
-        src: "/images/projectA/Aroom.png",
+        src: asset("/images/projectA/Aroom.png"),
         caption: {
           sv: "Sida för hotellalternativ",
           en: "Hotel options page",
         },
       },
       {
-        src: "/images/projectA/Aabout.png",
+        src: asset("/images/projectA/Aabout.png"),
         caption: {
           sv: "Om oss-sida med företagsinformation",
           en: "About us page with company information",
         },
       },
       {
-        src: "/images/projectA/Atransfer.png",
+        src: asset("/images/projectA/Atransfer.png"),
         caption: {
           sv: "Sida för bokning av transfer",
           en: "Transfer booking page",
@@ -127,8 +130,8 @@ export const projects: Project[] = [
 
     tags: ["Film", "Storytelling", "Editing", "Visual Effects"],
 
-    image: "/images/projectF/Fomslag.png",
-    caseImage: "/images/projectF/Fomslag.png",
+    image: asset("/images/projectF/Fomslag.png"),
+    caseImage: asset("/images/projectF/Fomslag.png"),
 
     role: {
       sv: "Koncept · Postproduktion · Redigering",
@@ -156,7 +159,7 @@ export const projects: Project[] = [
     },
 
     video: {
-      src: "/videos/projectF/cykelframjandet.mp4",
+      src: asset("/videos/projectF/cykelframjandet.mp4"),
       caption: {
         sv: "Den färdiga animerade filmen",
         en: "The final animated film",
@@ -195,9 +198,9 @@ export const projects: Project[] = [
 
     tags: ["Illustrator", "Photoshop", "InDesign", "Editorial Design"],
 
-    image: "/images/projectG/Ggomslag.png",
+    image: asset("/images/projectG/Ggomslag.png"),
 
-    caseImage: "/images/projectG/Gmagasin.png",
+    caseImage: asset("/images/projectG/Gmagasin.png"),
 
     role: {
       sv: "Visuell design · Redaktionell design · Illustration",
@@ -226,21 +229,21 @@ export const projects: Project[] = [
 
     gallery: [
       {
-        src: "/images/projectG/Guppslag.jpg",
+        src: asset("/images/projectG/Guppslag.jpg"),
         caption: {
           sv: "Magasinuppslag med typografisk hierarki och illustration",
           en: "Magazine spread featuring typographic hierarchy and illustration",
         },
       },
       {
-        src: "/images/projectG/Gmoodboard.png",
+        src: asset("/images/projectG/Gmoodboard.png"),
         caption: {
           sv: "Moodboard och visuell riktning för projektet",
           en: "Moodboard and visual direction for the project",
         },
       },
       {
-        src: "/images/projectG/Ggrafiskprofil.png",
+        src: asset("/images/projectG/Ggrafiskprofil.png"),
         caption: {
           sv: "Egna illustrationer utvecklade för det redaktionella innehållet",
           en: "Original illustrations developed for the editorial content",
@@ -280,9 +283,9 @@ export const projects: Project[] = [
 
     tags: ["Illustration", "Animation", "Graphic Design", "Advertising"],
 
-    image: "/images/projectC/Comslag.png",
+    image: asset("/images/projectC/Comslag.png"),
 
-    caseImage: "/images/projectC/Cphone.png",
+    caseImage: asset("/images/projectC/Cphone.png"),
 
     role: {
       sv: "Grafisk design · Illustration · Animation",
@@ -311,7 +314,7 @@ export const projects: Project[] = [
 
     gallery: [
       {
-        src: "/images/projectC/coffeetime.gif",
+        src: asset("/images/projectC/coffeetime.gif"),
         caption: {
           sv: "Animerad reklam för Coffee Time",
           en: "Animated advertisement for Coffee Time",
@@ -351,9 +354,9 @@ export const projects: Project[] = [
 
     tags: ["Figma", "UX", "UI Design", "Illustration"],
 
-    image: "/images/projectK/Komslag.png",
+    image: asset("/images/projectK/Komslag.png"),
 
-    caseImage: "/images/projectK/Kdator.png",
+    caseImage: asset("/images/projectK/Kdator.png"),
 
     role: {
       sv: "UX · UI · Visuell design · Illustration",
@@ -382,35 +385,35 @@ export const projects: Project[] = [
 
     gallery: [
       {
-        src: "/images/projectK/Kmoodboard.jpg",
+        src: asset("/images/projectK/Kmoodboard.jpg"),
         caption: {
           sv: "Moodboard och visuell riktning för Cooksy",
           en: "Moodboard and visual direction for Cooksy",
         },
       },
       {
-        src: "/images/projectK/KgrafiskProfil.png",
+        src: asset("/images/projectK/KgrafiskProfil.png"),
         caption: {
           sv: "Egna illustrationer och grafiska element skapade i Adobe Illustrator",
           en: "Original illustrations and graphic elements created in Adobe Illustrator",
         },
       },
       {
-        src: "/images/project4/mascot.png",
+        src: asset("/images/projectK/mascot.png"),
         caption: {
           sv: "Cooksy-maskoten, en illustrerad kockmössa utvecklad för plattformens visuella identitet",
           en: "The Cooksy mascot, an illustrated chef’s hat developed for the platform’s visual identity",
         },
       },
       {
-        src: "/images/project4/interface.png",
+        src: asset("/images/projectK/interface.png"),
         caption: {
           sv: "Exempel på gränssnitt och receptpresentation",
           en: "Example of the interface and recipe presentation",
         },
       },
       {
-        src: "/images/project4/mealplanner.png",
+        src: asset("/images/projectK/mealplanner.png"),
         caption: {
           sv: "Interaktiv måltidsplanerare för att organisera veckans recept",
           en: "Interactive meal planner for organizing weekly recipes",
@@ -450,9 +453,9 @@ export const projects: Project[] = [
 
     tags: ["Blender", "3D Modelling", "Animation", "Rigging", "Rendering"],
 
-    image: "/images/projectS/Somslag.png",
+    image: asset("/images/projectS/Somslag.png"),
 
-    caseImage: "/images/projectS/Somslag.png",
+    caseImage: asset("/images/projectS/Somslag.png"),
 
     role: {
       sv: "3D-modellering · Animation · Riggning · Rendering",
@@ -480,7 +483,7 @@ export const projects: Project[] = [
     },
 
     video: {
-      src: "/videos/projectS/spookyTown.mp4",
+      src: asset("/videos/projectS/spookyTown.mp4"),
       caption: {
         sv: "Den färdiga animerade filmen",
         en: "The final animated film",
