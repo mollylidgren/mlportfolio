@@ -1,0 +1,12 @@
+/*
+ * Single CSS entry point, imported once from src/main.tsx.
+ *
+ * base.css        -> Tailwind import, design tokens (@theme), global resets.
+ * components.css  -> All component/page-specific styles, organized by
+ *                     which .tsx file uses them, in Tailwind's
+ *                     "components" layer (so utility classes you add in
+ *                     JSX always take priority — see the comment at the
+ *                     top of components.css for why).
+ */
+@import './base.css';
+@import './components.css';

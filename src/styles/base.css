@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+/*
+ * Design tokens, exposed as real Tailwind utilities (Tailwind v4 "@theme").
+ * Because these are theme values, you can use them anywhere as normal
+ * Tailwind classes, e.g. bg-pink, text-ink, bg-paper, font-display …
+ * Change a value here once and it updates everywhere it's used.
+ */
+@theme {
+  --color-bg: #f7f4ee;
+  --color-paper: #17131a;
+  --color-ink: #17131a;
+  --color-muted: #6f6871;
+  --color-soft: #ece7df;
+  --color-line: rgba(23, 19, 26, 0.12);
+  --color-pink: #ff2d8d;
+  --color-pink-soft: #ffd6e8;
+  --color-pink-pale: #fff0f6;
+  --color-white: #fffdf9;
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;
+}
+
+/*
+ * Note: the marquee's @keyframes lives in components.css next to
+ * .marquee (Marquee.tsx), not here — keep it there if you touch it.
+ */
+
+/*
+ * Global resets that apply to the whole document (not tied to a single
+ * component). Kept in @layer base so any Tailwind utility class you add
+ * directly on an element (e.g. className="mb-10") will always win over
+ * these — that's what "@layer base/components" gives you for free.
+ */
+@layer base {
+  :root {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: var(--color-bg);
+    line-height: 1.5;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-paper);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-pink);
+    color: #fff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
