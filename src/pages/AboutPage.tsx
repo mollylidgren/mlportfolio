@@ -4,6 +4,7 @@ import { Rich } from "../i18n/Rich";
 
 export function AboutPage({ reduced: _reduced }: { reduced: boolean }) {
   const { t } = useLanguage();
+
   return (
     <PageHero
       eyebrow={t.about.eyebrow}
@@ -13,10 +14,15 @@ export function AboutPage({ reduced: _reduced }: { reduced: boolean }) {
       <div className="about-layout">
         <div className="portrait-card">
           <div className="portrait-shape">
-            <span>{t.about.portraitPlaceholder}</span>
+            <img
+              src={`${import.meta.env.BASE_URL}images/profile/ML.png`}
+              alt="Molly Lidgren"
+            />
           </div>
+
           <p>{t.about.portraitCaption}</p>
         </div>
+
         <div className="about-copy">
           <p className="big-copy">{t.about.bigCopy}</p>
 
