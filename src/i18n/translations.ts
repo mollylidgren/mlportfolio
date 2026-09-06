@@ -505,8 +505,8 @@ const en: Dict = {
     title: ["Broad experience \n", { em: "Clear direction" }],
     text: "I like moving between the creative and the technical, turning ideas into something clear, useful and engaging.",
     portraitPlaceholder: "YOUR IMAGE / PORTRAIT",
-    portraitCaption: "Space for a strong portrait or a personal 3D image.",
-    bigCopy: "Name Name",
+    portraitCaption: "",
+    bigCopy: "Molly Lidgren",
     bigCopySections: [
       {
         title: "Who I am",
