@@ -277,8 +277,7 @@ const sv: Dict = {
     title: ["Bred erfarenhet \n ", { em: "Tydlig riktning" }],
     text: "Jag gillar att röra mig mellan det kreativa och det tekniska, och att göra idéer begripliga, användbara och levande.",
     portraitPlaceholder: "DIN BILD / PORTRÄTT",
-    portraitCaption:
-      "Plats för ett starkt porträtt eller en personlig 3D-bild.",
+    portraitCaption: "",
     bigCopy: "Namn Efternamn",
     bigCopySections: [
       {
