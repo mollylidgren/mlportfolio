@@ -40,7 +40,7 @@ export const projects: Project[] = [
 
     image: asset("/images/projectA/Awebsite.png"),
 
-    caseImage: asset("/images/projectA/Aadator.png"),
+    caseImage: asset("/images/projectA/Ascreen.png"),
 
     role: {
       sv: "Frontend · UX · Visuell design",
@@ -198,9 +198,9 @@ export const projects: Project[] = [
 
     tags: ["Illustrator", "Photoshop", "InDesign", "Editorial Design"],
 
-    image: asset("/images/projectG/Ggomslag.png"),
+    image: asset("/images/projectG/Gcover.png"),
 
-    caseImage: asset("/images/projectG/Gmagasin.png"),
+    caseImage: asset("/images/projectG/Gopen.png"),
 
     role: {
       sv: "Visuell design · Redaktionell design · Illustration",
@@ -283,9 +283,9 @@ export const projects: Project[] = [
 
     tags: ["Illustration", "Animation", "Graphic Design", "Advertising"],
 
-    image: asset("/images/projectC/Comslag.png"),
+    image: asset("/images/projectC/Ccover.png"),
 
-    caseImage: asset("/images/projectC/Cphone.png"),
+    caseImage: asset("/images/projectC/Cmob.png"),
 
     role: {
       sv: "Grafisk design · Illustration · Animation",
@@ -354,9 +354,9 @@ export const projects: Project[] = [
 
     tags: ["Figma", "UX", "UI Design", "Illustration"],
 
-    image: asset("/images/projectK/Komslag.png"),
+    image: asset("/images/projectK/Kcover.png"),
 
-    caseImage: asset("/images/projectK/Kdator.png"),
+    caseImage: asset("/images/projectK/Kscreen.png"),
 
     role: {
       sv: "UX · UI · Visuell design · Illustration",
@@ -385,6 +385,27 @@ export const projects: Project[] = [
 
     gallery: [
       {
+        src: asset("/images/projectK/Kstart.png"),
+        caption: {
+          sv: "Startsidan och Cooksy-plattformens visuella uttryck",
+          en: "The homepage and Cooksy platform’s visual identity",
+        },
+      },
+      {
+        src: asset("/images/projectK/Kfeed.png"),
+        caption: {
+          sv: "Receptflödet med översikt och presentation av recept",
+          en: "The recipe feed with an overview and presentation of recipes",
+        },
+      },
+      {
+        src: asset("/images/projectK/Karticles.png"),
+        caption: {
+          sv: "Artikelsidan med inspiration och innehåll om mat",
+          en: "The articles page featuring food-related inspiration and content",
+        },
+      },
+      {
         src: asset("/images/projectK/Kmoodboard.jpg"),
         caption: {
           sv: "Moodboard och visuell riktning för Cooksy",
@@ -396,27 +417,6 @@ export const projects: Project[] = [
         caption: {
           sv: "Egna illustrationer och grafiska element skapade i Adobe Illustrator",
           en: "Original illustrations and graphic elements created in Adobe Illustrator",
-        },
-      },
-      {
-        src: asset("/images/projectK/mascot.png"),
-        caption: {
-          sv: "Cooksy-maskoten, en illustrerad kockmössa utvecklad för plattformens visuella identitet",
-          en: "The Cooksy mascot, an illustrated chef’s hat developed for the platform’s visual identity",
-        },
-      },
-      {
-        src: asset("/images/projectK/interface.png"),
-        caption: {
-          sv: "Exempel på gränssnitt och receptpresentation",
-          en: "Example of the interface and recipe presentation",
-        },
-      },
-      {
-        src: asset("/images/projectK/mealplanner.png"),
-        caption: {
-          sv: "Interaktiv måltidsplanerare för att organisera veckans recept",
-          en: "Interactive meal planner for organizing weekly recipes",
         },
       },
     ],
