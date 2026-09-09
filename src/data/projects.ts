@@ -130,8 +130,8 @@ export const projects: Project[] = [
 
     tags: ["Film", "Storytelling", "Editing", "Visual Effects"],
 
-    image: asset("/images/projectF/Fomslag.png"),
-    caseImage: asset("/images/projectF/Fomslag.png"),
+    image: asset("/images/projectF/Fcover.png"),
+    caseImage: asset("/images/projectF/Fscreen.png"),
 
     role: {
       sv: "Koncept · Postproduktion · Redigering",
@@ -161,8 +161,8 @@ export const projects: Project[] = [
     video: {
       src: asset("/videos/projectF/cykelframjandet.mp4"),
       caption: {
-        sv: "Den färdiga animerade filmen",
-        en: "The final animated film",
+        sv: "Den färdiga filmen",
+        en: "The final film",
       },
     },
   },
